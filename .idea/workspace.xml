@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5fe6a0e2-7049-4643-bd53-b476be33a7c9" name="Changes" comment="Авторизация + Протоколы РВ + Пользователи + Команды">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boost/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boost/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="com.haulmont.jpb.JpaRepository" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LuBFaniZbJgNtU30cUQQvYEvqi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "C:/Users/dima-/Desktop/boost/src/test/java",
+    "last_opened_file_path": "C:/Users/dima-/Desktop/SkillOver/boost-mobile",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="slcd.boost.boost.Users.DTOs" />
+      <recent name="slcd.boost.boost.Users.Entities" />
+      <recent name="slcd.boost.boost.Syncs.DTOs" />
+      <recent name="slcd.boost.boost.Protocols.RegularMeetings.DTOs" />
+      <recent name="slcd.boost.boost.Payloads.Requests.User" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dima-\Desktop\boost\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dima-\Desktop\boost" />
+      <recent name="C:\Users\dima-\Desktop\boost\skilloverapp" />
+      <recent name="C:\Users\dima-\Desktop\boost\Application" />
+      <recent name="C:\Users\dima-\Desktop\boost\src\main\resources" />
+      <recent name="C:\Users\dima-\Desktop\boost\src\main\java\slcd\boost\boost" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="slcd.boost.boost.Auths.DTOs" />
+      <recent name="slcd.boost.boost.Protocols.Exceptions" />
+      <recent name="slcd.boost.boost.Entities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TEST">
+    <configuration name="LOCAL" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="slcd.boost.boost.BoostApplication" />
+      <module name="boost-mobile" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=local" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TEST" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="slcd.boost.boost.BoostApplication" />
+      <module name="boost-mobile" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoostApplicationTests.testDecrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boost" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="slcd.boost.boost.General.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="slcd.boost.boost" />
+      <option name="MAIN_CLASS_NAME" value="slcd.boost.boost.BoostApplicationTests" />
+      <option name="METHOD_NAME" value="testDecrypt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoostApplicationTests.testFindUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boost" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="slcd.boost.boost.Syncs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="slcd.boost.boost" />
+      <option name="MAIN_CLASS_NAME" value="slcd.boost.boost.BoostApplicationTests" />
+      <option name="METHOD_NAME" value="testFindUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoostApplicationTests.testSyncPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boost" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="slcd.boost.boost.General.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="slcd.boost.boost" />
+      <option name="MAIN_CLASS_NAME" value="slcd.boost.boost.BoostApplicationTests" />
+      <option name="METHOD_NAME" value="testSyncPosts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoostApplicationTests.testSyncProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boost" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="slcd.boost.boost.Syncs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="slcd.boost.boost" />
+      <option name="MAIN_CLASS_NAME" value="slcd.boost.boost.BoostApplicationTests" />
+      <option name="METHOD_NAME" value="testSyncProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoostApplicationTests.testSyncUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boost" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="slcd.boost.boost.Syncs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="slcd.boost.boost" />
+      <option name="MAIN_CLASS_NAME" value="slcd.boost.boost.BoostApplicationTests" />
+      <option name="METHOD_NAME" value="testSyncUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/boost-0.0.1-SNAPSHOT.jar" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=local" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\dima-\Desktop\boost" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <configuration name="boost [compiler:help]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="boost [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="dependency:tree" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.LOCAL" />
+      <item itemvalue="Application.TEST" />
+      <item itemvalue="JAR Application.Unnamed" />
+      <item itemvalue="JUnit.BoostApplicationTests.testDecrypt" />
+      <item itemvalue="JUnit.BoostApplicationTests.testFindUsers" />
+      <item itemvalue="JUnit.BoostApplicationTests.testSyncPosts" />
+      <item itemvalue="JUnit.BoostApplicationTests.testSyncProducts" />
+      <item itemvalue="JUnit.BoostApplicationTests.testSyncUsers" />
+      <item itemvalue="Maven.boost [compiler:help]" />
+      <item itemvalue="Maven.boost [install]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BoostApplicationTests.testDecrypt" />
+        <item itemvalue="JUnit.BoostApplicationTests.testFindUsers" />
+        <item itemvalue="JUnit.BoostApplicationTests.testSyncUsers" />
+        <item itemvalue="JUnit.BoostApplicationTests.testSyncProducts" />
+        <item itemvalue="JUnit.BoostApplicationTests.testSyncPosts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5fe6a0e2-7049-4643-bd53-b476be33a7c9" name="Changes" comment="" />
+      <created>1676710984961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676710984961</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Базовая MVC структура реализована!!!">
+      <created>1677442079475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677442079475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавлен обработчик ошибок">
+      <created>1677489679637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677489679637</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавлены классы Goal и ControlPoint. Добавлены методы их создания">
+      <created>1677603485790</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677603485790</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавлен сервис base64 и SecurityConfig">
+      <created>1680519928452</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680519928452</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавлен сервис base64 и SecurityConfig">
+      <created>1680519979974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680519979974</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавлен сервис RegularMeeting">
+      <created>1682027466119</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682027466119</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Много чего добавлено, в основном авторизация через ldap">
+      <created>1683335031627</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683335031628</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Реализован 1 этап выпуска, добавлен тестовый properties">
+      <created>1684285952086</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684285952087</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Авторизация + Протоколы РВ + Пользователи + Команды">
+      <created>1684776112886</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684776112886</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="controlPoint" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Базовая MVC структура реализована!!!" />
+    <MESSAGE value="Добавлен обработчик ошибок" />
+    <MESSAGE value="Добавлены классы Goal и ControlPoint. Добавлены методы их создания" />
+    <MESSAGE value="Добавлен сервис base64 и SecurityConfig" />
+    <MESSAGE value="Добавлен сервис RegularMeeting" />
+    <MESSAGE value="Много чего добавлено, в основном авторизация через ldap" />
+    <MESSAGE value="Реализован 1 этап выпуска, добавлен тестовый properties" />
+    <MESSAGE value="Авторизация + Протоколы РВ + Пользователи + Команды" />
+    <option name="LAST_COMMIT_MESSAGE" value="Авторизация + Протоколы РВ + Пользователи + Команды" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/skilloverapp/src/main/java/slcd/boost/boost/Ldap/LdapUserDetailsMapper.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/skilloverapp/src/main/java/slcd/boost/boost/Ldap/LdapConfig.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/skilloverapp/src/test/java/slcd/boost/boost/BoostApplicationTests.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/skilloverapp/src/main/java/slcd/boost/boost/General/PostService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/skilloverapp/src/main/java/slcd/boost/boost/Auths/CustomLdapAuthProvider.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/skilloverapp/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/RegularMeetingService.java</url>
+          <line>205</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/CustomLdapAuthProvider.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/AuthController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/AuthService.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="internalUserInfo.getId().equals(&quot;ca6d0fdf-4c9f-4e30-9511-577609b5a411&quot;)" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/slcd/boost/boost/Users/UserService.java</url>
+          <line>510</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.type.descriptor.java.spi.JdbcTypeRecommendationException" package="org.hibernate.type.descriptor.java.spi" />
+          <option name="timeStamp" value="37" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile" memberName="part" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((ApplicationPart)((StandardMultipartFile)files.get(0)).part).fileItem" custom="org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.StandardMultipartFile,org.apache.catalina.core.ApplicationPart" />
+        <watch expression="files.get(0)" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
