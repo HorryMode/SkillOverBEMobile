@@ -215,6 +215,12 @@ public class UserService {
                 ));
     }
 
+    public UserEntity getCurrentUserEntity(){
+        return findUserById(
+                userAccessCheckService.getUserIdFromJwtToken()
+        );
+    }
+
     public UserShort findShortUserInfoById(Long id){
         UserEntity user = findUserById(id);
         String userName = user.getLastname().concat(" ").concat(user.getFirstname());

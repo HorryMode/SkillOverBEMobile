@@ -4,8 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe6a0e2-7049-4643-bd53-b476be33a7c9" name="Changes" comment="Авторизация + Протоколы РВ + Пользователи + Команды">
+    <list default="true" id="5fe6a0e2-7049-4643-bd53-b476be33a7c9" name="Changes" comment="Добавление проверки CORS + отлавливание направильного JWT">
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/CertificationAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/CertificationConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/CertificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/CertificationProtocolService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/CertificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CertificationEducationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CertificationKeyQuestionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CertificationOpenQuestionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CertificationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CertificationShortResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CertificationTestSkillsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CreateCertProtocolRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CreateCertificationGoalDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CreateCertificationOpenQuestionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/CreateCertificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/UpdateCertificationOpenQuestionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/DTOs/UpdateCertificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/CertificationEducationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/CertificationEducationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/CertificationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/CertificationKeyQuestionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/CertificationOpenQuestionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/CertificationTestSkillsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/CertificationTestSkillsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Entities/SCertificationKeyQuestionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Enums/ECertificationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Exceptions/CertificationAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Exceptions/CertificationKeyQuestionNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Exceptions/CertificationNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Exceptions/NotCompletedCertificationNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Repos/CertificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Certification/Repos/SCertificationKeyQuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/CreateGoalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/GoalResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/GoalShortResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/GoalsStatisticsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/UpdateGoalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Entities/GoalEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Enums/EGoalStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Enums/EGradeStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Exceptions/GoalCantChangeStatusException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Exceptions/GoalNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Repos/GoalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/ProtocolStatusService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Entities/ProtocolEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Entities/ProtocolEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Entities/ProtocolStatusEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Entities/ProtocolStatusEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Interfaces/IProtocolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Interfaces/IProtocolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/Enums/EProtocolStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Enums/EProtocolStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/Enums/EProtocolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/Enums/EProtocolType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/RegularMeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/RegularMeetingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/Repos/ProtocolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/Repos/ProtocolRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/Repos/ProtocolStatusRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Protocols/RegularMeetings/Repos/ProtocolStatusRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Syncs/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Syncs/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Users/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,25 +108,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/dima-/Desktop/boost/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dima-/Desktop/SkillOver/boost&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "C:/Users/dima-/Desktop/boost/src/test/java",
+    "last_opened_file_path": "C:/Users/dima-/Desktop/SkillOver/boost-mobile/src/main/java/slcd/boost/boost/Protocols",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;,
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="slcd.boost.boost.Users.DTOs" />
@@ -77,6 +136,8 @@
       <recent name="slcd.boost.boost.Payloads.Requests.User" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dima-\Desktop\SkillOver\boost-mobile\src\main\java\slcd\boost\boost\Protocols" />
+      <recent name="C:\Users\dima-\Desktop\SkillOver\boost-mobile\src\main\java\slcd\boost\boost" />
       <recent name="C:\Users\dima-\Desktop\boost\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -87,12 +148,14 @@
       <recent name="C:\Users\dima-\Desktop\boost\src\main\java\slcd\boost\boost" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="slcd.boost.boost.Protocols" />
+      <recent name="slcd.boost.boost.Auths.Exceptions" />
       <recent name="slcd.boost.boost.Auths.DTOs" />
       <recent name="slcd.boost.boost.Protocols.Exceptions" />
       <recent name="slcd.boost.boost.Entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TEST">
+  <component name="RunManager" selected="Application.LOCAL">
     <configuration name="LOCAL" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -352,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684779917956</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Добавление проверки CORS + отлавливание направильного JWT">
+      <created>1684887439632</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684887439632</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -362,17 +432,6 @@
           <value>
             <State>
               <option name="BEK_SORT_TYPE" value="1" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="test" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
             </State>
           </value>
         </entry>
@@ -422,7 +481,8 @@
     <MESSAGE value="Много чего добавлено, в основном авторизация через ldap" />
     <MESSAGE value="Реализован 1 этап выпуска, добавлен тестовый properties" />
     <MESSAGE value="Авторизация + Протоколы РВ + Пользователи + Команды" />
-    <option name="LAST_COMMIT_MESSAGE" value="Авторизация + Протоколы РВ + Пользователи + Команды" />
+    <MESSAGE value="Добавление проверки CORS + отлавливание направильного JWT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление проверки CORS + отлавливание направильного JWT" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -475,7 +535,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="internalUserInfo.getId().equals(&quot;ca6d0fdf-4c9f-4e30-9511-577609b5a411&quot;)" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/main/java/slcd/boost/boost/Users/UserService.java</url>
-          <line>510</line>
+          <line>516</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

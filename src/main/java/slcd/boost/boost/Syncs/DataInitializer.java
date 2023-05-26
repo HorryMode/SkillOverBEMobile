@@ -5,7 +5,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import slcd.boost.boost.Auths.AesService;
 import slcd.boost.boost.Protocols.Entities.ProtocolStatusEntity;
-import slcd.boost.boost.Protocols.RegularMeetings.Enums.EProtocolStatus;
+import slcd.boost.boost.Protocols.Enums.EProtocolStatus;
 import slcd.boost.boost.Protocols.RegularMeetings.Repos.ProtocolStatusRepository;
 import slcd.boost.boost.Users.ERole;
 import slcd.boost.boost.Users.Entities.RoleEntity;

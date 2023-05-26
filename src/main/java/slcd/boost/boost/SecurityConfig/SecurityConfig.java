@@ -72,8 +72,6 @@ public class SecurityConfig{
                 .requestMatchers("/api/v1/auth/refresh").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                .requiresChannel().anyRequest().requiresSecure()
-                .and()
                 .csrf().disable()
                 .x509().subjectPrincipalRegex("CN=(.*?)(?:,|$)")
                 .and()

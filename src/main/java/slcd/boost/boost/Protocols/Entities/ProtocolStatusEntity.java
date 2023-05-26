@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import slcd.boost.boost.Protocols.RegularMeetings.Enums.EProtocolStatus;
+import slcd.boost.boost.Protocols.Enums.EProtocolStatus;
 
 @AllArgsConstructor
 @NoArgsConstructor

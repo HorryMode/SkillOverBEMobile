@@ -18,8 +18,8 @@ import slcd.boost.boost.Protocols.RegularMeetings.DTOs.*;
 import slcd.boost.boost.Protocols.RegularMeetings.Entities.ProtocolConversationFieldEntity;
 import slcd.boost.boost.Protocols.Entities.ProtocolEntity;
 import slcd.boost.boost.Protocols.Entities.ProtocolStatusEntity;
-import slcd.boost.boost.Protocols.RegularMeetings.Enums.EProtocolStatus;
-import slcd.boost.boost.Protocols.RegularMeetings.Enums.EProtocolType;
+import slcd.boost.boost.Protocols.Enums.EProtocolStatus;
+import slcd.boost.boost.Protocols.Enums.EProtocolType;
 import slcd.boost.boost.General.Exceptions.ResourceNotFoundException;
 import slcd.boost.boost.General.DTOs.Attachment;
 import slcd.boost.boost.General.DTOs.UUIDResponse;
@@ -424,6 +424,11 @@ public class RegularMeetingService implements IProtocolService {
         fileDownloadPayload.setFile(new UrlResource(file.toURI()));
 
         return fileDownloadPayload;
+    }
+
+    @Override
+    public ProtocolEntity getProtocolEntity(String uuid) {
+        return null;
     }
 
     @Override

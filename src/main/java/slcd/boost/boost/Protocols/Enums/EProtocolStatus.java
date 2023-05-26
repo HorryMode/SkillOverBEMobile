@@ -1,4 +1,4 @@
-package slcd.boost.boost.Protocols.RegularMeetings.Enums;
+package slcd.boost.boost.Protocols.Enums;
 
 public enum EProtocolStatus {
     CREATED,

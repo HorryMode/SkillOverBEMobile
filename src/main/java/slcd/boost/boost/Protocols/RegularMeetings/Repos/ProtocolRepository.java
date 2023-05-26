@@ -4,7 +4,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import slcd.boost.boost.Protocols.RegularMeetings.Enums.EProtocolType;
+import slcd.boost.boost.Protocols.Enums.EProtocolType;
 import slcd.boost.boost.Protocols.Entities.ProtocolEntity;
 import slcd.boost.boost.Users.Entities.UserEntity;
 

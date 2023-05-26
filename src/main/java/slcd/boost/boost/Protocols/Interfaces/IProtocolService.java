@@ -3,6 +3,7 @@ package slcd.boost.boost.Protocols.Interfaces;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.multipart.MultipartFile;
 import slcd.boost.boost.General.Interfaces.IResponse;
+import slcd.boost.boost.Protocols.Entities.ProtocolEntity;
 import slcd.boost.boost.Protocols.RegularMeetings.DTOs.ProtocolPageResponse;
 
 import java.io.IOException;
@@ -17,6 +18,8 @@ public interface IProtocolService {
     IResponse getProtocol(String uuid) throws AccessDeniedException;
     ProtocolPageResponse getProtocols(Long ownerId, Pageable pageable);
     IResponse getAttachment(String uuid) throws IOException;
+
+    ProtocolEntity getProtocolEntity(String uuid);
 
     void setStatusOnApproval(String uuid) throws AccessDeniedException;
 

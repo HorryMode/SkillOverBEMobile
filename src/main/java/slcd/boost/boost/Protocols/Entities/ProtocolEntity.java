@@ -8,7 +8,7 @@ import lombok.Setter;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 import slcd.boost.boost.Protocols.RegularMeetings.Entities.ProtocolConversationFieldEntity;
-import slcd.boost.boost.Protocols.RegularMeetings.Enums.EProtocolType;
+import slcd.boost.boost.Protocols.Enums.EProtocolType;
 import slcd.boost.boost.Users.Entities.UserEntity;
 
 import java.time.LocalDateTime;
