@@ -10,6 +10,9 @@ import slcd.boost.boost.Users.Entities.UserEntity;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -22,10 +25,7 @@ public class RefreshSessionService {
     private long refreshTokenExpiration;
 
     public String generateRefreshToken(String fingerprint, UserEntity user){
-        RefreshSessionEntity refreshSession = findByFingerprint(fingerprint);
-
-        if(refreshSession != null)
-            delete(refreshSession);
+        deleteAllRefreshSessionsByFingerprint(fingerprint);
 
         RefreshSessionEntity newRefreshSession
                 = newRefreshSessionEntity(fingerprint, user);
@@ -75,16 +75,34 @@ public class RefreshSessionService {
         return refreshSession;
     }
 
-    public RefreshSessionEntity findByFingerprint(String fingerprint){
-        return refreshSessionRepository
-                .findByFingerprint(fingerprint);
-    }
-
     public RefreshSessionEntity findByFingerprintAndRefreshToken(String fingerprint, String refreshToken){
-        return refreshSessionRepository.
+        List<RefreshSessionEntity>  refreshSessionEntities = refreshSessionRepository.
                 findByFingerprintAndRefreshToken(
                         fingerprint,
                         UUID.fromString(refreshToken)
-                ).orElseThrow();
+                );
+
+        if(refreshSessionEntities.size() == 1){
+            return refreshSessionEntities.get(0);
+        }
+        else {
+            deleteAllRefreshSessionsByFingerprint(fingerprint);
+            throw new RefreshTokenExpireException(
+                    AuthConstants.REFRESH_TOKEN_EXPIRE_MESSAGE,
+                    refreshToken
+            );
+        }
+    }
+
+    public void deleteAllRefreshSessionsByFingerprint(String fingerprint){
+        List<RefreshSessionEntity> refreshSessions
+                = refreshSessionRepository.findByFingerprint(fingerprint);
+
+        Iterator<RefreshSessionEntity> iterator = refreshSessions.iterator();
+
+        while (iterator.hasNext()){
+            RefreshSessionEntity item = iterator.next();
+            delete(item);
+        }
     }
 }

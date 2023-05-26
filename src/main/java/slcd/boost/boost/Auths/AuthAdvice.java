@@ -1,5 +1,6 @@
 package slcd.boost.boost.Auths;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
@@ -10,6 +11,7 @@ import slcd.boost.boost.Auths.Exceptions.RefreshTokenExpireException;
 import slcd.boost.boost.General.DTOs.ExceptionResponse;
 
 @ControllerAdvice(assignableTypes = {AuthController.class})
+@Order(1)
 public class AuthAdvice {
 
     @ExceptionHandler(InsufficientAuthenticationException.class)
