@@ -29,6 +29,37 @@ public class GoalController {
         return goalService.getUserCurrentGoals(ownerId);
     }
 
+    @PostMapping("/{uuid}/steps")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void saveSteps(
+            @PathVariable(name= "uuid") String uuid,
+            @RequestBody List<GoalStepDTO> request
+    ){
+        goalService.saveStepsByGoalUuid(uuid, request);
+    }
+
+    @GetMapping("/{uuid}/steps")
+    @ResponseStatus(HttpStatus.CREATED)
+    public List<GoalStepDTO> getSteps(
+            @PathVariable(name= "uuid") String uuid
+    ){
+        return goalService.getStepsByGoalUuid(uuid);
+    }
+
+    @GetMapping("/steps/statistics")
+    @ResponseStatus(HttpStatus.OK)
+    public StepStatisticsDTO getStepsStatistics(){
+        return goalService.getUserStepStatistics();
+    }
+
+    @GetMapping("/{uuid}/steps/statistics")
+    @ResponseStatus(HttpStatus.CREATED)
+    public StepStatisticsDTO getStepsStatisticsByGoalUuid(
+            @PathVariable(name = "uuid") String uuid
+    ){
+        return goalService.getGoalStepStatistics(uuid);
+    }
+
     @GetMapping("/statistics/{id}/user")
     @ResponseStatus(HttpStatus.OK)
     public GoalsStatisticsDTO getUserGoalStatistics(@PathVariable(name = "id") Long id) throws AccessDeniedException {
@@ -39,5 +70,22 @@ public class GoalController {
     @ResponseStatus(HttpStatus.OK)
     public List<GoalsStatisticsDTO> getTeamGoalStatistics(@PathVariable(name = "id") Long id) throws AccessDeniedException {
         return goalService.getTeamGoalsStatistics(id);
+    }
+
+    @PostMapping("/{uuid}/note")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void saveNote(
+            @PathVariable(name = "uuid") String uuid,
+            @RequestBody @Valid GoalNoteDTO request
+    ){
+        goalService.saveNote(uuid, request);
+    }
+
+    @GetMapping("/{uuid}/note")
+    @ResponseStatus(HttpStatus.OK)
+    public GoalNoteDTO getNoteByGoalUuid(
+            @PathVariable(name = "uuid") String uuid
+    ){
+        return goalService.getNoteByUuid(uuid);
     }
 }

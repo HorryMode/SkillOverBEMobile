@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import slcd.boost.boost.General.DTOs.ExceptionResponse;
 import slcd.boost.boost.General.Exceptions.OnlyTeamLeaderHaveAccessException;
+import slcd.boost.boost.General.Exceptions.UserNotHaveAuthoritiesException;
 
 import java.nio.file.AccessDeniedException;
 import java.util.List;
@@ -36,6 +37,12 @@ public class GeneralAdvice {
         String message = "Необходимый параметр '" + parameterName + "' не передан";
 
         var response = new ExceptionResponse(400, message);
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(UserNotHaveAuthoritiesException.class)
+    ResponseEntity<ExceptionResponse> handleUserNotHaveAuthorities(UserNotHaveAuthoritiesException e){
+        var response = new ExceptionResponse(403, e.getMessage());
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 

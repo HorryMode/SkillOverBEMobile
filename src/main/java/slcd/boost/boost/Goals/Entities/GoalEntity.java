@@ -13,6 +13,7 @@ import slcd.boost.boost.Goals.Enums.EGoalStatus;
 import slcd.boost.boost.Goals.Enums.EGradeStatus;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 @Entity(name = "f_goals")
@@ -74,4 +75,10 @@ public class GoalEntity {
 
     @Column(name = "updated", nullable = false)
     private LocalDateTime updated;
+
+    @OneToMany(mappedBy = "goal", orphanRemoval = true)
+    private List<GoalStepEntity> goalSteps;
+
+    @OneToOne(mappedBy = "goal")
+    private GoalNoteEntity note;
 }

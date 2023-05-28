@@ -6,6 +6,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+import slcd.boost.boost.General.Exceptions.UserNotHaveAuthoritiesException;
 import slcd.boost.boost.SecurityConfig.JwtUtils;
 import slcd.boost.boost.Users.Entities.TeamLeaderId;
 import slcd.boost.boost.Users.Entities.UserEntity;
@@ -14,6 +15,7 @@ import slcd.boost.boost.Users.Repos.UserRepository;
 
 import java.nio.file.AccessDeniedException;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 @Service
@@ -41,6 +43,13 @@ public class UserAccessCheckService {
         if(!currentUserId.equals(requestedUserId)){
             throw new AccessDeniedException(ACCESS_DENIED_MESSAGE);
         }
+    }
+
+    public void isCurrentUser(UserEntity requestUser, UserEntity currentUser){
+        if(!Objects.equals(
+                currentUser.getId(),
+                requestUser.getId()
+        )) throw new UserNotHaveAuthoritiesException(ACCESS_DENIED_MESSAGE);
     }
 
     public void checkAccess() throws AccessDeniedException {

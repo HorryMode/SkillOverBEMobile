@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe6a0e2-7049-4643-bd53-b476be33a7c9" name="Changes" comment="Добавлена аттестация + цели. Убрано https настройки">
+    <list default="true" id="5fe6a0e2-7049-4643-bd53-b476be33a7c9" name="Changes" comment="Исправлена ошибка с дублированием refresh-токена">
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/General/Exceptions/UserNotHaveAuthoritiesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/GoalNoteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/GoalStepDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/DTOs/StepStatisticsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Entities/GoalNoteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Entities/GoalStepEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Repos/GoalNoteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Repos/GoalStepRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/AuthAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/AuthAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/RefreshSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/RefreshSessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/Repos/RefreshSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Auths/Repos/RefreshSessionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/General/GeneralAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/General/GeneralAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/General/UserAccessCheckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/General/UserAccessCheckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Entities/GoalEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/Entities/GoalEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/slcd/boost/boost/Goals/GoalService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_directory_selection": "C:/Users/dima-/Desktop/boost/src/test/java",
-    "last_opened_file_path": "C:/Users/dima-/Desktop/SkillOver/boost-mobile",
+    "last_opened_file_path": "C:/Users/dima-/Desktop/SkillOver/boost-mobile/src/main/java/slcd/boost/boost/Goals/Repos",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -80,9 +90,11 @@
       <recent name="slcd.boost.boost.Payloads.Requests.User" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dima-\Desktop\SkillOver\boost-mobile\src\main\java\slcd\boost\boost\Goals\Repos" />
+      <recent name="C:\Users\dima-\Desktop\SkillOver\boost-mobile\src\main\java\slcd\boost\boost\Goals\Entities" />
+      <recent name="C:\Users\dima-\Desktop\SkillOver\boost-mobile\src\main\java\slcd\boost\boost\Goals\DTOs" />
       <recent name="C:\Users\dima-\Desktop\SkillOver\boost-mobile\src\main\java\slcd\boost\boost\Protocols" />
       <recent name="C:\Users\dima-\Desktop\SkillOver\boost-mobile\src\main\java\slcd\boost\boost" />
-      <recent name="C:\Users\dima-\Desktop\boost\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dima-\Desktop\boost" />
@@ -92,14 +104,14 @@
       <recent name="C:\Users\dima-\Desktop\boost\src\main\java\slcd\boost\boost" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="slcd.boost.boost.General.Exceptions" />
       <recent name="slcd.boost.boost.Protocols" />
       <recent name="slcd.boost.boost.Auths.Exceptions" />
       <recent name="slcd.boost.boost.Auths.DTOs" />
       <recent name="slcd.boost.boost.Protocols.Exceptions" />
-      <recent name="slcd.boost.boost.Entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TEST">
+  <component name="RunManager" selected="Application.LOCAL">
     <configuration name="LOCAL" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -373,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685061610031</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Исправлена ошибка с дублированием refresh-токена">
+      <created>1685138276568</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685138276568</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +453,8 @@
     <MESSAGE value="Авторизация + Протоколы РВ + Пользователи + Команды" />
     <MESSAGE value="Добавление проверки CORS + отлавливание направильного JWT" />
     <MESSAGE value="Добавлена аттестация + цели. Убрано https настройки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена аттестация + цели. Убрано https настройки" />
+    <MESSAGE value="Исправлена ошибка с дублированием refresh-токена" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлена ошибка с дублированием refresh-токена" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
